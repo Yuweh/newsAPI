@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @Environment(\.openURL) var openUrl
+    
     @StateObject var viewModel = NewsViewModelImpl(service: NewsServiceImpl())
     
     var body: some View {
